@@ -1,0 +1,12 @@
+flask
+flask-cors
+requests
+python-dotenv
+google-generativeai
+python-whois
+dnspython
+fastapi
+uvicorn
+static-files
+pydantic
+ollama

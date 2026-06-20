@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assisted Vulnerability Scanner - Presentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #05070a;
+            --accent: #00f0ff;
+            --text: #f1f5f9;
+            --muted: #64748b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            overflow: hidden;
+        }
+        .slides-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+        .slide {
+            min-width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            position: relative;
+            background: radial-gradient(circle at center, rgba(0, 240, 255, 0.03) 0%, transparent 70%);
+        }
+        .slide-content {
+            max-width: 1000px;
+            width: 100%;
+            z-index: 2;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--accent);
+            border-left: 4px solid var(--accent);
+            padding-left: 1.5rem;
+        }
+        ul {
+            list-style: none;
+            font-size: 1.5rem;
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 1.2rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        .controls {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+            z-index: 100;
+        }
+        .btn {
+            background: rgba(0, 240, 255, 0.1);
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 1rem 2rem;
+            cursor: pointer;
+            border-radius: 8px;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+        .btn:hover { background: var(--accent); color: var(--bg); }
+        .slide-num {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            font-family: 'JetBrains Mono';
+            color: var(--muted);
+        }
+        .title-slide {
+            text-align: center;
+        }
+        .title-slide h1 { font-size: 5rem; }
+        .title-slide p { font-size: 1.5rem; color: var(--muted); margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="slides-container" id="container">
+        <!-- Slide 1 -->
+        <div class="slide title-slide">
+            <div class="slide-content">
+                <h1>AI Assisted Vulnerability Scanner</h1>
+                <p>Bridging Automated Scanning and Intelligent Analysis</p>
+                <div style="margin-top: 3rem; color: var(--accent); font-weight: 600;">HACKATHON 2026</div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>The Problem Statement</h2>
+                <ul>
+                    <li>Manual pentesting is slow and resource-heavy.</li>
+                    <li>Automated tools produce fragmented raw data.</li>
+                    <li>Security students struggle with interpretation.</li>
+                    <li>The gap: Data exists, but insights are missing.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Project Objectives</h2>
+                <ul>
+                    <li>Automate multi-vector reconnaissance.</li>
+                    <li>Apply AI to explain findings in natural language.</li>
+                    <li>Build a modern, premium UI for all devices.</li>
+                    <li>Generate professional, boardroom-ready reports.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Key Innovation</h2>
+                <ul>
+                    <li>Integrated Scanner: Port, DNS, SSL, and Headers.</li>
+                    <li>AI Engine: Powered by local Llama 3.2.</li>
+                    <li>Interactive AI Tutor: Built-in Q&A Assistant.</li>
+                    <li>One-Click Reporting: Professional Markdown & PDF.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Technical Stack</h2>
+                <ul>
+                    <li>Backend: FastAPI (High-performance Python).</li>
+                    <li>AI Core: Ollama (Secure, Private Intelligence).</li>
+                    <li>Frontend: Vanilla JS + Glassmorphic CSS.</li>
+                    <li>Analysis: Custom Python Recon Modules.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Automated Reconnaissance</h2>
+                <ul>
+                    <li>Multi-Port Service Discovery.</li>
+                    <li>Infrastructure DNS Mapping.</li>
+                    <li>Security Header Audit (CSP, HSTS, etc.).</li>
+                    <li>SSL Certificate Health & Expiry.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>The Intelligence Layer</h2>
+                <ul>
+                    <li>Context-aware AI vulnerability interpretation.</li>
+                    <li>Severity ranking from Critical to Info.</li>
+                    <li>Educational remediation guides for developers.</li>
+                    <li>Identification of chainable attack vectors.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Premium UI/UX Design</h2>
+                <ul>
+                    <li>Deep Dark Mode with Glassmorphism.</li>
+                    <li>Comprehensive Dashboard Visualization.</li>
+                    <li>Floating AI Assistant Pop-up Module.</li>
+                    <li>Fully Responsive for Mobile & Desktop.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Reporting & Remediation</h2>
+                <ul>
+                    <li>Executive Summaries & Technical Details.</li>
+                    <li>Remediation Priority Matrices.</li>
+                    <li>Markdown export for developer workflows.</li>
+                    <li>Print-ready styling for corporate review.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Value Proposition</h2>
+                <ul>
+                    <li>Empowering students with professional insights.</li>
+                    <li>Enabling startups with low-cost surface audits.</li>
+                    <li>Reducing 'Scan-to-Report' time by 80%.</li>
+                    <li>Bridging the gap between Security and Dev.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Future Roadmap</h2>
+                <ul>
+                    <li>Nuclei Integration (10k+ vuln templates).</li>
+                    <li>Scalable Cloud Scanning Infrastructure.</li>
+                    <li>Bulk multi-target scheduling.</li>
+                    <li>Deep AI focus on OWASP Top 10.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="slide">
+            <div class="slide-content">
+                <h2>Thank You!</h2>
+                <ul>
+                    <li>Demo URL: localhost:8000</li>
+                    <li>Project: AI Assisted Vulnerability Scanner</li>
+                    <li>Contact: Hackathon Team Alpha</li>
+                    <li>Questions?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-num" id="num">1 / 12</div>
+
+    <div class="controls">
+        <button class="btn" onclick="prev()">PREV</button>
+        <button class="btn" onclick="next()">NEXT</button>
+    </div>
+
+    <script>
+        let current = 0;
+        const total = 12;
+        const container = document.getElementById('container');
+        const num = document.getElementById('num');
+
+        function update() {
+            container.style.transform = `translateX(-${current * 100}vw)`;
+            num.textContent = `${current + 1} / ${total}`;
+        }
+
+        function next() {
+            if (current < total - 1) { current++; update(); }
+        }
+
+        function prev() {
+            if (current > 0) { current--; update(); }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') next();
+            if (e.key === 'ArrowLeft') prev();
+        });
+    </script>
+</body>
+</html>
