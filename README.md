@@ -2,7 +2,19 @@
 
 An AI-powered external reconnaissance and vulnerability assessment tool built with **FastAPI**, **Ollama (llama3.2)**, and a sleek dark-mode web UI.
 
-![Security Dashboard](screenshots/01_dashboard_scan_results.png)
+## 📸 Screenshots
+
+### Security Dashboard
+![Security Dashboard](screenshots/01_security_dashboard.png)
+
+### Security Headers & SSL/TLS Analysis
+![Security Headers & SSL](screenshots/02_security_headers_ssl.png)
+
+### AI Vulnerability Analysis
+![AI Analysis](screenshots/03_ai_analysis.png)
+
+### Final Security Report
+![Security Report](screenshots/04_report.png)
 
 ---
 
