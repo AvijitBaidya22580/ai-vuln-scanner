@@ -7,9 +7,6 @@ An AI-powered external reconnaissance and vulnerability assessment tool built wi
 ### Security Dashboard
 ![Security Dashboard](screenshots/01_security_dashboard.png)
 
-### Security Headers & SSL/TLS Analysis
-![Security Headers & SSL](screenshots/02_security_headers_ssl.png)
-
 ### AI Vulnerability Analysis
 ![AI Analysis](screenshots/03_ai_analysis.png)
 
